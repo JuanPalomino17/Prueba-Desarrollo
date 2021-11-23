@@ -1,0 +1,52 @@
+
+<div class="card">
+    <div class="card-header">
+        AGREGAR EMPLEADO
+    </div>
+    <div class="card-body">
+        <form ngNavigateValidate [formGroup]="formularioDeEmpleados"  (ngSubmit)="enviarDatos()">
+
+            <div class="mb-3">
+              <label for="" class="form-label">NOMBRE</label>
+              <input required type="text"
+                class="form-control" name="" formControlName="nombre" 
+                id="" aria-describedby="helpId" placeholder="ESCRIBE TU NOMBRE">
+            </div> 
+
+            <div class="mb-3">
+                <label for="" class="form-label">APELLIDOS</label>
+                <input required type="text"
+                  class="form-control" name="" formControlName="apellidos" 
+                  id="" aria-describedby="helpId" placeholder="ESCRIBE TU APELLIDO">
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="form-label">CEDULA</label>
+                <input required type="number"
+                  class="form-control" name="" formControlName="cedula"
+                   id="" aria-describedby="helpId" placeholder="ESCRIBE TU CEDULA">
+              </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">CORREO</label>
+                <input required type="email"
+                  class="form-control" name="" formControlName="correo"
+                   id="" aria-describedby="helpId" placeholder="ESCRIBE TU CORREO">
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="form-label">TELEFONO</label>
+                <input required type="number"
+                  class="form-control" name="" formControlName="telefono"
+                   id="" aria-describedby="helpId" placeholder="ESCRIBE TU TELEFONO">
+              </div>
+
+              <div class="btn-group" role="group" aria-label="">
+
+                  <button type="submit" class="btn btn-success">AGREGAR</button>
+                  
+                  <button type="button"routerLink="/listar-empleado" class="btn btn-primary">CANCELAR</button>
+              </div>
+        </form>
+    </div>
+</div>
